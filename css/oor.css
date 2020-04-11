@@ -13,14 +13,13 @@ button {
   transition: all 0.3s ease; }
 
 section:last-child {
-  padding-bottom: 63px; }
+  padding-bottom: 49px; }
 
 .footer {
   background-color: #222222;
   color: white;
   position: relative;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem .75rem;
   position: absolute;
   bottom: 0;
   width: 100%; }

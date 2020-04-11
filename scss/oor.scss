@@ -51,7 +51,7 @@ h4 {
 
 section {
   &:last-child {
-    padding-bottom: 63px;
+    padding-bottom: 49px;
   }
 }
 
@@ -59,8 +59,7 @@ section {
   background-color: $color-default;
   color: white;
   position: relative;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem .75rem;
   position: absolute;
   bottom: 0;
   width: 100%;
