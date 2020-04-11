@@ -1,0 +1,18 @@
+html {
+  font-size: 14px; }
+
+body {
+  color: #222222;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+a,
+button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.btn-default {
+  color: white;
+  background-color: #222222;
+  border-color: #222222; }

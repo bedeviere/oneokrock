@@ -1,0 +1,19 @@
+// Color Variables
+$color-default: #222222;
+
+// Font Variables
+$font-sans: 'Open Sans', sans-serif;
+$font-serif: 'Playfair Display', serif;
+
+// Mixins
+@mixin transition-default {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
