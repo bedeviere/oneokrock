@@ -25,13 +25,18 @@ section:last-child {
   bottom: 0;
   width: 100%; }
 
-.hero {
-  background-color: #222222; }
+.button {
+  text-transform: uppercase;
+  font-weight: 700; }
 
-.btn-default {
+.button-default {
   color: white;
   background-color: #222222;
   border-color: #222222; }
+
+.button-hero {
+  width: 320px;
+  margin-top: 6rem; }
 
 .navbar {
   background-color: #222222;
@@ -41,6 +46,12 @@ section:last-child {
   text-transform: uppercase;
   font-weight: 700;
   color: inherit; }
+
+.hero {
+  background-color: #222222; }
+
+.hero-body {
+  text-align: center; }
 
 .video-container {
   position: fixed;
