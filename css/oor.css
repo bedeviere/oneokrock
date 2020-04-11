@@ -12,7 +12,29 @@ button {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+.footer {
+  background-color: #222222;
+  color: white;
+  position: relative;
+  padding-bottom: 3rem; }
+
 .btn-default {
   color: white;
   background-color: #222222;
   border-color: #222222; }
+
+.navbar {
+  background-color: #222222;
+  color: white; }
+
+.navbar-item {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit; }
+
+.video-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%; }
