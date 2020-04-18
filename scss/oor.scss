@@ -10,43 +10,60 @@ body {
   font-weight: 400;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  &.has-navbar-fixed-top {
+    padding-top: 3.25rem;
+  }
+}
+
 a,
 button {
   @include transition-default;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  // margin-bottom: 1rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  // font-weight: 700;
+a {
+  color: $color-aqua;
+  &:hover {
+    color: $color-gold;
+  }
 }
 
 h1 {
-  // font-size: 3.502rem;
+  font-size: 3.502rem !important;
+  font-family: $font-serif;
 }
 
 h2 {
-  // font-size: 3.157rem;
+  font-size: 3.502rem !important;
+  font-family: $font-serif;
 }
 
 h3 {
-  // font-size: 2.369rem;
+  font-size: 2.369rem !important;
 }
 
 h4 {
-  // font-size: 1.777rem;
+  font-size: 1rem !important;
+}
+
+.content {
+  h1, h2 {
+    font-weight: 400;
+  }
+  ul, ol {
+    margin-left: 1em;
+  }
+  ul {
+    list-style-type: circle;
+  }
+}
+
+nav a {
+  &:hover {
+    color: $color-gold !important;
+  }
 }
 
 .navbar {
@@ -78,6 +95,7 @@ section {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
 .footer-text {
@@ -85,11 +103,14 @@ section {
 }
 
 .footer-social {
-  text-align: right;
   font-size: 24px;
   a {
-    margin-left: 10px;
     color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:hover {
+      color: $color-gold;
+    }
   }
 }
 
@@ -123,4 +144,64 @@ section {
   top: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+.about-image {
+  img {
+    width: 100%;
+  }
+}
+
+.about-image-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+}
+
+.about-content {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 2em;
+  h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-image-cover {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer-text {
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: right;
+    a {
+      margin-right: 0;
+    }
+  }
+
+  .about-image {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+      display: none;
+    }
+  }
+
+  .about-content {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+  }
 }

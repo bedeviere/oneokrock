@@ -6,11 +6,48 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
+.wrapper {
+  min-height: 100%;
+  position: relative; }
+  .wrapper.has-navbar-fixed-top {
+    padding-top: 3.25rem; }
+
 a,
 button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+a {
+  color: #00B0DA; }
+  a:hover {
+    color: #FDB515; }
+
+h1 {
+  font-size: 3.502rem !important;
+  font-family: "Playfair Display", serif; }
+
+h2 {
+  font-size: 3.502rem !important;
+  font-family: "Playfair Display", serif; }
+
+h3 {
+  font-size: 2.369rem !important; }
+
+h4 {
+  font-size: 1rem !important; }
+
+.content h1, .content h2 {
+  font-weight: 400; }
+
+.content ul, .content ol {
+  margin-left: 1em; }
+
+.content ul {
+  list-style-type: circle; }
+
+nav a:hover {
+  color: #FDB515 !important; }
 
 .navbar {
   background-color: #222222;
@@ -34,17 +71,20 @@ section:last-child {
   padding: 1rem .75rem;
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .footer-text {
   line-height: 36px; }
 
 .footer-social {
-  text-align: right;
   font-size: 24px; }
   .footer-social a {
+    color: white;
     margin-left: 10px;
-    color: white; }
+    margin-right: 10px; }
+    .footer-social a:hover {
+      color: #FDB515; }
 
 .button {
   text-transform: uppercase;
@@ -71,3 +111,45 @@ section:last-child {
   top: 0;
   min-width: 100%;
   min-height: 100%; }
+
+.about-image img {
+  width: 100%; }
+
+.about-image-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%; }
+
+.about-content {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 2em; }
+  .about-content h1 {
+    text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  .about-image-cover {
+    display: none; } }
+
+@media only screen and (min-width: 769px) {
+  .footer-text {
+    text-align: left; }
+  .footer-social {
+    text-align: right; }
+    .footer-social a {
+      margin-right: 0; }
+  .about-image {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .about-image img {
+      display: none; }
+  .about-content {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; } }
