@@ -52,10 +52,8 @@ h4 {
   h1, h2 {
     font-weight: 400;
   }
-  ul, ol {
-    margin-left: 1em;
-  }
   ul {
+    margin-left: 1em;
     list-style-type: circle;
   }
 }
@@ -169,6 +167,29 @@ section {
   }
 }
 
+ul.album-list {
+  > li {
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.album-image,
+.album-content {
+  float: left;
+  width: 100%;
+}
+
+.album-image {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-image-cover {
     display: none;
@@ -203,5 +224,20 @@ section {
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
+  }
+
+  ul.album-list {
+    > li {
+      &:nth-child(2n) {
+        .album-image {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .album-image,
+  .album-content {
+    width: 50%;
   }
 }
