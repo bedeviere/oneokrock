@@ -12,8 +12,20 @@ button {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+.navbar {
+  background-color: #222222;
+  color: white; }
+
+.navbar-menu {
+  background-color: #222222; }
+
+.navbar-item {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit; }
+
 section:last-child {
-  padding-bottom: 49px; }
+  padding-bottom: 64px; }
 
 .footer {
   background-color: #222222;
@@ -23,6 +35,16 @@ section:last-child {
   position: absolute;
   bottom: 0;
   width: 100%; }
+
+.footer-text {
+  line-height: 36px; }
+
+.footer-social {
+  text-align: right;
+  font-size: 24px; }
+  .footer-social a {
+    margin-left: 10px;
+    color: white; }
 
 .button {
   text-transform: uppercase;
@@ -36,15 +58,6 @@ section:last-child {
 .button-hero {
   width: 320px;
   margin-top: 6rem; }
-
-.navbar {
-  background-color: #222222;
-  color: white; }
-
-.navbar-item {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: inherit; }
 
 .hero {
   background-color: #222222; }

@@ -10,6 +10,12 @@ gulp.task('vendor', function(done) {
     ])
     .pipe(gulp.dest('vendor/bulma'))
 
+  // jQuery
+  gulp.src([
+      'node_modules/jquery/dist/**/*'
+    ])
+    .pipe(gulp.dest('vendor/jquery'))
+
   // Font Awesome Free
   gulp.src([
       'node_modules/@fortawesome/fontawesome-free/**/*'
