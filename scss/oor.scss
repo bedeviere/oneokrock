@@ -190,6 +190,16 @@ ul.album-list {
   }
 }
 
+.album-content {
+  .content {
+    h2 {
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-image-cover {
     display: none;
@@ -239,5 +249,14 @@ ul.album-list {
   .album-image,
   .album-content {
     width: 50%;
+  }
+
+  .album-content {
+    .content {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+    }
   }
 }

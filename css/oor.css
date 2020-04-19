@@ -141,6 +141,9 @@ ul.album-list > li::after {
   width: 100%;
   display: block; }
 
+.album-content .content h2:not(:first-child) {
+  margin-top: 0; }
+
 @media only screen and (max-width: 768px) {
   .about-image-cover {
     display: none; } }
@@ -169,4 +172,9 @@ ul.album-list > li::after {
     float: right; }
   .album-image,
   .album-content {
-    width: 50%; } }
+    width: 50%; }
+  .album-content .content {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px; } }
