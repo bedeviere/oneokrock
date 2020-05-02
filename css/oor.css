@@ -92,12 +92,25 @@ section:last-child {
 
 .button {
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .button-default {
   color: white;
   background-color: #222222;
   border-color: #222222; }
+  .button-default:hover, .button-default.active {
+    background-color: #00B0DA; }
+
+.button-default-o {
+  color: #222222;
+  background-color: transparent;
+  border-color: #222222; }
+  .button-default-o:hover, .button-default-o.active {
+    color: white;
+    background-color: #222222; }
 
 .button-hero {
   width: 320px;
@@ -197,6 +210,23 @@ ul.album-list > li::after {
     top: 0;
     right: 0;
     bottom: 0; }
+
+.section-merch h1 {
+  text-align: center; }
+
+.merch-buttons {
+  text-align: center; }
+
+.merch-item {
+  display: none; }
+  .merch-item.show {
+    display: block; }
+
+.section-tourdates h1 {
+  text-align: center; }
+
+.tourdates-table {
+  min-width: 100%; }
 
 @media only screen and (max-width: 768px) {
   .about-image-cover {
