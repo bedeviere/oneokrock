@@ -86,6 +86,12 @@ nav a {
   color: inherit;
 }
 
+.navbar-burger {
+  span {
+    background-color: white;
+  }
+}
+
 section {
   &:last-child {
     padding-bottom: 64px;
